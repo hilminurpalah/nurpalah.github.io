@@ -5,27 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hilmi Nurpalah | Tugas Sistem Operasi</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 40px; }
-    h1, h2 { color: #333; }
-    ul { padding-left: 20px; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #6dd5ed, #2193b0);
+      color: #333;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #0d47a1;
+    }
+    main {
+      max-width: 800px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .info {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #e3f2fd;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    ul li:hover {
+      background: #bbdefb;
+    }
+    a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Selamat Datang Di WEBSITE</h1>
-    <p>Nama: <strong>Hilmi Nurpalah</strong></p>
-    <p>NIM: <strong>2303010150</strong></p>
-    <p>Kelas: <strong>F-23</strong></p>
-
-    <h2>Tugas Mata Kuliah Sistem Operasi</h2>
+  <header>
+    <h1>Hilmi Nurpalah</h1>
+    <p>Tugas Mata Kuliah Sistem Operasi</p>
+  </header>
+  <main>
+    <div class="info">
+      <p><strong>NIM:</strong> 2303010150</p>
+      <p><strong>Kelas:</strong> F-23</p>
+    </div>
+    <h2>Daftar Tugas</h2>
     <ul>
       <li><a href="tugas1.html">Tugas 1 – Manajemen Proses</a></li>
       <li><a href="tugas2.html">Tugas 2 – Penjadwalan CPU</a></li>
       <li><a href="tugas3.html">Tugas 3 – Manajemen Memori</a></li>
     </ul>
-  </div>
+  </main>
+  <footer>
+    &copy; 2025 Hilmi Nurpalah
+  </footer>
 </body>
-</html>
+</html>"""
+
+# Simpan file baru ke direktori
+stylish_path = "/mnt/data/index_stylish.html"
+with open(stylish_path, "w") as f:
+    f.write(index_html_stylish)
+
+stylish_path
